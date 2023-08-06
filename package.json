@@ -1,0 +1,27 @@
+{
+  "name": "mernproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon backend/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm start --prefix frontend_1",
+    "dev": "concurrently \"npm start\" \"npm run client\""
+  },
+  "author": "Manjay",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^8.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.0",
+    "jwtoken": "^0.0.0",
+    "mongoose": "^7.2.0",
+    "moongoose": "^0.0.5",
+    "nodemon": "^2.0.22"
+  }
+}
